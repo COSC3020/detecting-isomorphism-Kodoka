@@ -18,10 +18,11 @@ What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 ## My Runtime
 
-I took the brute force approach here, so in the worst case, my algorithm
-has the potential to generate $n!$ permutations of graph1, as each label
-has the potential to be rearranged and swapped with others in $(n * (n-1) *
-(n - 2) * ... * 2 * 1)$ ways.  
+For my runtime, $n$ is representative of the vertices within the first graph
+of my input. I took the brute force approach here, so in the worst case, my
+algorithm has the potential to generate $n!$ permutations of graph1, as each
+label has the potential to be rearranged and swapped with others in $(n *
+(n-1) * (n - 2) * ... * 2 * 1)$ ways.  
 
 For each of those permutations, we then compare graph1 and graph2 along
 their rows and columns giving us a time complexity of $n * n$ or $n^2$.  
