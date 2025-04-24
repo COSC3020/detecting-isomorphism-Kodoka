@@ -54,7 +54,6 @@ function permuteGraph(graph, labelA, labelB)
     {
         [graph[rowIndex][labelA], graph[rowIndex][labelB]] =
             [graph[rowIndex][labelB], graph[rowIndex][labelA]];
-        console.log(JSON.stringify(graph)); // Remove.
     }
 }
 
@@ -78,15 +77,3 @@ function compareGraphs(graph1, graph2)
     // Excellent, a match!
     return true;
 }
-
-var graph1 = [[0,1,0,1],
-            [1,0,1,0],
-            [0,1,1,1],
-            [1,0,1,0]];
-
-var graph2 = [[1,1,0,1],
-            [1,0,1,0],
-            [0,1,1,1],
-            [1,0,1,1]];
-
-are_isomorphic(graph1, graph2);
